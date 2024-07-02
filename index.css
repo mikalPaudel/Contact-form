@@ -1,0 +1,189 @@
+body {
+  font-family: 'Karla', sans-serif;
+  color: hsl(187, 24%, 22%);
+}
+
+.main {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(148, 38%, 91%);
+}
+
+.container {
+  max-width: 800px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.required-input {
+  color: green;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#image {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-alert {
+  color: red;
+  display: none;
+}
+
+
+#alert {
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  width: fit-content;
+  text-align: left;
+  /* display: none; */
+  pointer-events: all;
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+/* #alert.active {
+
+} */
+
+@keyframes fadeOut {
+
+  0%,
+  25%,
+  50%,
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form-control,
+.form-check-input {
+  /* border: 2px solid hsl(148, 38%, 91%); */
+  border-radius: 0.25rem;
+}
+
+.form-check-input:checked {
+  background-color: hsl(169, 82%, 27%);
+  border-color: hsl(169, 82%, 27%);
+}
+
+/* Hover effect on input fields */
+.form-control:hover,
+.form-check-input:hover {
+  border-color: rgba(0, 128, 0, 0.5);
+  cursor: pointer;
+}
+
+.form-check-custom:focus-within {
+  background-color: hsl(148, 38%, 91%);
+}
+
+/* Change border color when input field is selected (focused) */
+.form-control:focus,
+.form-check-input:focus {
+  border-color: hsl(169, 82%, 27%);
+  box-shadow: none;
+  outline: none;
+  /* Remove default outline */
+}
+
+/* hello */
+
+.form-check-label {
+  color: hsl(187, 24%, 22%);
+    text-align: -webkit-match-parent; /* WebKit browsers */
+    text-align: inherit;              /* All browsers */
+}
+
+.form-check-custom {
+  border: 1px solid;
+  border-radius: 0.25rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-custom input {
+  margin-right: 10px;
+  border-color: hsl(169, 82%, 27%);
+}
+
+/* .form-alert {
+  color: hsl(0, 66%, 54%);
+} */
+
+.btn-primary {
+  background-color: hsl(169, 82%, 27%);
+  border-color: hsl(169, 82%, 27%);
+}
+
+.btn-primary:hover {
+  background-color: hsl(148, 100%, 13%);
+  border-color: hsl(169, 82%, 27%);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* .success-message {
+  background-color: grey;
+  color: green;
+  width: max-content;
+  padding: 1rem;
+  pointer-events: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .35rem;
+}
+
+.success-message.active {
+  display: block;
+  pointer-events: all;
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+} */
